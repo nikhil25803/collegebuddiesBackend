@@ -7,7 +7,9 @@ const profileSchema = mongoose.Schema({
     linkedinLink: { type: String, },
     githubLink: { type: String },
     twitterLink: { type: String, },
-    discordLink: { type: String }
+    discordLink: { type: String },
+    imageUrl:{type: String},
+    email: {type: String},
 })
 
 

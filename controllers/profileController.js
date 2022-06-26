@@ -11,7 +11,10 @@ class profileController {
                 stream: req.body.stream,
                 linkedinLink: req.body.linkedinLink,
                 githubLink: req.body.githubLink,
-                discordLink: req.body.discordLink
+                twitterLink: req.body.twitterLink,
+                discordLink: req.body.discordLink,
+                imageUrl:req.body.imageUrl,
+                email: req.body.email,
             });
             const result = await newData.save();
             res.send(result);
