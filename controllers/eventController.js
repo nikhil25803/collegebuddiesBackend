@@ -36,6 +36,7 @@ class eventController {
             collegeName: req.body.collegeName,
             collegeWebsite: req.body.collegeWebsite,
             eventName: req.body.eventName,
+            eventAbout: req.body.eventAbout,
             eventLink: req.body.eventLink,
             location: req.body.location,
         })

@@ -8,6 +8,7 @@ const postEventschema = mongoose.Schema({
     collegeName: { type: String, required: true, },
     collegeWebsite: { type: String, required: true, },
     eventName: { type: String, required: true, },
+    eventAbout: {type: String},
     eventLink: { type: String },
     location: {type:String},
 })
