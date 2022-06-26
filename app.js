@@ -37,7 +37,7 @@ app.use('/featuredEvent', featuredRoute);
 
 //  Methods
 app.get('/', (req, res) => {
-  res.send('Hello World');
+  res.send('Welcome to College Buddies');
 });
 
 // Port Connectio
