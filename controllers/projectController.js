@@ -46,6 +46,7 @@ class projectController {
 
                 projectName: req.body.projectName,
                 projectAbout: req.body.projectAbout,
+                techStacks: req.body.tecchStacks,
                 githubLink: req.body.githubLink,
                 liveLink: req.body.liveLink,
             });
