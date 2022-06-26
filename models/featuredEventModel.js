@@ -8,6 +8,7 @@ const featuredEventSchema = mongoose.Schema({
     eventName: { type: String, required: true, },
     eventAbout: {type: String},
     eventLink: { type: String },
+    eventUrl:{type:String},
     location: {type:String},
 })
 

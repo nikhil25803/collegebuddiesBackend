@@ -38,6 +38,7 @@ class eventController {
             eventName: req.body.eventName,
             eventAbout: req.body.eventAbout,
             eventLink: req.body.eventLink,
+            eventUrl: req.body.eventUrl,
             location: req.body.location,
         })
         try {
@@ -56,14 +57,14 @@ class eventController {
         try {
             const id = req.params.id
             const data = req.body
-            const updatedData  = await EventModel.findByIdAndUpdate(id, data);
+            const updatedData = await EventModel.findByIdAndUpdate(id, data);
             res.json({
-                message:`Event with ID: ${id} has been updated`
+                message: `Event with ID: ${id} has been updated`
             })
         } catch (err) {
             console.log(err);
             res.json({
-                message:"Error"
+                message: "Error"
             })
         }
     };

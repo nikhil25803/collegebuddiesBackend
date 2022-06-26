@@ -23,6 +23,7 @@ class featureController {
             eventName: req.body.eventName,
             eventLink: req.body.eventLink,
             eventAbout: req.body.eventAbout,
+            eventUrl: req.body.eventUrl,
             location: req.body.location,
         })
         try {
