@@ -22,6 +22,7 @@ class featureController {
             collegeWebsite: req.body.collegeWebsite,
             eventName: req.body.eventName,
             eventLink: req.body.eventLink,
+            eventAbout: req.body.eventAbout,
             location: req.body.location,
         })
         try {
