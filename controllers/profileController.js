@@ -13,7 +13,7 @@ class profileController {
                 githubLink: req.body.githubLink,
                 twitterLink: req.body.twitterLink,
                 discordLink: req.body.discordLink,
-                imageUrl:req.body.imageUrl,
+                imageUrl: req.body.imageUrl,
                 email: req.body.email,
             });
             const result = await newData.save();
@@ -85,8 +85,18 @@ class profileController {
 
     // Delete profile by Id
     static profileDelete = async (req, res) => {
-        const deleteByid = await ProfileModel.findByIdAndDelete(req.params.id);
-        res.send(deleteByid);
+        try {
+            const deleteByid = await ProfileModel.findByIdAndDelete(req.params.id);
+            res.send(deleteByid);
+        } catch (err) {
+            console.log(err);
+            res.json(
+                {
+                    message: "Data Deleted"
+                }
+            )
+        }
+
     }
 
 }
